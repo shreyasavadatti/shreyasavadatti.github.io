@@ -132,7 +132,7 @@
       <div>
         <h3>Failure of Geometric R&eacute;nyi Amortization Collapse Without Slot Assistance</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Zenodo.</div>
-        <p>I study amortization of geometric R&eacute;nyi divergence for superchannels when an inserted channel has no reference assistance. A counterexample shows that collapse fails for every 1 &lt; &alpha; &le; 2 in this restricted setting. This does not establish failure for reference-assisted divergences.</p>
+        <p>I construct a counterexample to amortization collapse for geometric R&eacute;nyi superchannel divergence when no reference system can bypass the tested channel. The example uses commuting three-level states, a two-level output, and output dephasing, yet gives a strict separation for <strong>every 1 &lt; &alpha; &le; 2</strong>. At &alpha; = 2, the unamortized divergence is exactly log<sub>2</sub>(3/2) (about 0.585 bits), while an explicit rational witness reaches at least log<sub>2</sub>(183/116) (about 0.658 bits). I also show that a three-dimensional bypass register restores equality for this example and prove reference-assisted collapse for memoryless superchannel pairs. The broader fully amortized network-discrimination question remains open.</p>
         <div class="more"><a href="https://zenodo.org/records/24266097">Paper</a>
           <a href="https://qiqc-op.com/problem/op_1482756b02794495/">Open problem</a></div>
       </div>
@@ -142,7 +142,7 @@
       <div>
         <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Write-up. Supported by IonQ research credits.</div>
-        <p>Received IonQ research credits to study characterization and correction of errors in trapped-ion two-qubit gates. The linked work includes simulator results and a plan for physical-device validation; it should not be read as completed IonQ Forte hardware results.</p>
+        <p>I developed a <strong>four-parameter noise model</strong> for the native trapped-ion ZZ gate and three short calibration-circuit families that learn dephasing, coherent rotation error, and depolarization without Pauli twirling. I then derived a first-order correction that adjusts measured observables without changing the original circuit. In <strong>five-qubit simulations</strong>, this reduced observable bias by <strong>6&ndash;15&times;</strong> compared with uncorrected measurements; at <strong>40 ZZ gates</strong>, median bias was <strong>1.7&ndash;4&times;</strong> smaller than with zero-noise extrapolation. The learning procedure was also tested using IonQ's <code>forte-1</code> cloud noise-model simulator. Physical IonQ hardware validation is planned, not yet reported.</p>
         <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction/blob/main/paper/writeup.pdf">PDF</a>
           <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
       </div>
@@ -150,10 +150,10 @@
     <div class="item">
       <span class="yr">2025</span>
       <div>
-        <!-- EDIT: replace with the exact published title and author list -->
+        <!-- Exact publication metadata verified. -->
         <h3>Analysis of quantum fully homomorphic encryption schemes (QFHE) and hierarchial memory management for QFHE</h3>
         <div class="meta"><b>Shreya Savadatti</b>, Aswani Kumar Cherukuri, Annapurna Jonnalagadda, and Athanasios V. Vasilakos. <i>Complex &amp; Intelligent Systems</i>, 11, 264 (2025). Review article.</div>
-        <p>Surveyed quantum fully homomorphic encryption schemes and proposed a hierarchical memory-management framework using a quantum cache and reinforcement learning. The memory-management approach is a proposed design, not a demonstrated hardware implementation.</p>
+        <p>In this published review, we compare quantum fully homomorphic encryption approaches and examine the challenge of managing encrypted quantum data during computation. We also propose a hierarchical memory-management architecture with a quantum cache and reinforcement-learning-based control. The paper connects cryptographic requirements with practical questions of data placement, memory access, and fault-tolerant computation. The proposed architecture is a design framework, not a completed hardware evaluation.</p>
         <div class="more"><a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Paper</a></div>
       </div>
     </div>
@@ -163,8 +163,8 @@
       <span class="yr">2026</span>
       <div>
         <h3>Physicality, Relaxation Gaps, and Resource Allocation in Pauli-Limited Quantum Certification</h3>
-        <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang. In preparation for arXiv.</div>
-        <p>I study how requiring an unknown quantum channel to be physical changes what can be certified from noisy Pauli measurements. A computer-assisted interval proof gives two two-qubit gates with the same stabilizer norm but different certification robustness. The repository also contains interval-checked examples for 200 two-qubit and 10 three-qubit targets, plus a simulated measurement protocol using 81 Pauli-basis settings. No physical-device measurements are claimed.</p>
+        <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang. Manuscript in preparation.</div>
+        <p>With Peter Yun Zhang, I study how much gate fidelity can be certified from incomplete, noisy Pauli measurements. We solve the positivity-relaxed problem in terms of the target's stabilizer norm, then prove that this number alone does not determine the best <em>physical</em> certificate: an interval-arithmetic proof exhibits <strong>two two-qubit gates with exactly the same stabilizer norm but different certification robustness</strong>. We give an exact condition for when the relaxation is tight and derive shot-allocation rules for finite measurement budgets. The reproducibility package includes interval-checked examples for <strong>200 two-qubit and 10 three-qubit targets</strong> and a simulated <strong>81-setting</strong> measurement protocol. No hardware measurements are claimed.</p>
         <div class="more"><a href="https://github.com/shreyasavadatti/positivity-pauli-certification">Code and data</a></div>
       </div>
     </div>
@@ -173,7 +173,7 @@
       <div>
         <h3>Certified Separation Between Coherent and Adaptive Temporal Processing of Quantum-Error-Correction Readout</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
-        <p>I compare two ways of processing repeated quantum-error-correction readout: measuring each round with classical feed-forward, or retaining a small quantum memory between rounds. In a two-round model, a bound covering all separate adaptive receivers gives decision risk at least 25.1432%. A coherent receiver with a seven-dimensional memory reaches at most 24.2100%, a certified improvement of at least 0.9332 percentage points. The comparison uses the same signal ensemble and decision loss for both receiver classes.</p>
+        <p>I study whether keeping quantum information between rounds of syndrome readout can improve the final error-correction decision. I bound <strong>every separate adaptive receiver</strong>, including receivers with unrestricted classical history and feed-forward, using a semidefinite relaxation, and compare that bound with an explicit coherent receiver. In a two-round benchmark, all separate adaptive receivers have recovery risk of at least <strong>25.1432%</strong>, while a receiver retaining a <strong>seven-dimensional quantum memory</strong> achieves at most <strong>24.2100%</strong>: a certified improvement of at least <strong>0.9332 percentage points</strong>. In the strict counted-register model, the smallest separating memory dimension is <strong>four</strong>; certified separations also extend to three and four rounds.</p>
       </div>
     </div>
     <div class="item">
@@ -181,7 +181,7 @@
       <div>
         <h3>Perpetual Fault Tolerance at Fixed Overhead for Contractive Quantum Filters and Recurrent Instruments</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
-        <p>This manuscript studies recurrent quantum filters that contract trace distance, so the influence of earlier errors diminishes over time. Under explicit contraction and fault-tolerance assumptions, the analysis combines concatenated level reduction with error contraction to obtain an error bound that does not grow with the number of rounds. It is not a general fixed-overhead claim for arbitrary quantum computations.</p>
+        <p>I develop a fault-tolerance analysis for quantum filters that run continuously and gradually forget earlier disturbances. Standard whole-circuit error bounds grow with the number of operations; here, combining concatenated error correction with trace-distance contraction gives a bound on the <strong>current state and any fixed window of recent outputs that holds for every number of rounds</strong>, using a fixed encoding level with respect to runtime. The manuscript constructs a <strong>Steane [[7,1,3]]</strong> fault-tolerant implementation, uses machine-checked integer calculations for its stated gadget obligations, and derives an exact <strong>two-cycle contraction factor of 1/&radic;2</strong> for a driven weak-measurement example. The guarantee depends on the filter's contraction and fault-model assumptions; it does not cover the full growing output transcript.</p>
       </div>
     </div>
     <div class="item">
@@ -189,15 +189,15 @@
       <div>
         <h3>Entanglement Budgets and Certified Energy Floors for Variational Quantum Circuits</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
-        <p>I derive bounds on the energies reachable by variational quantum circuits with limited entangling resources. The bounds depend on the gates and entangling angles across circuit cuts, and apply before any optimization is run. They distinguish a circuit's inability to represent a target state from an optimizer's failure to find it.</p>
+        <p>I derive lower bounds on the energy error of variational quantum eigensolvers <strong>before optimization</strong>, using both the number of entangling gates and their total rotation angle across cuts of the circuit. These certificates distinguish limited expressibility from an optimizer that simply fails to find a good state. In disordered Ising-chain tests, even the strongest joint gate-count bound was at least <strong>35&times;</strong> below the observed training error; the angle-based bound remained informative where gate counting failed. For tested circuits with up to <strong>three entanglers per cut</strong>, trained examples meet the angle bound to <strong>four decimal places</strong>. The analysis also gives an interaction-time bound for pulse-level circuits and stronger certificates when circuit symmetries are preserved.</p>
       </div>
     </div>
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>Quantum Algorithms for Oscillatory Brinkman Flow: Preconditioning and Observable Estimation</h3>
-        <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
-        <p>I analyze quantum linear-system methods for oscillatory flow through porous media. The manuscript develops a preconditioner with a grid-independent condition-number bound under stated assumptions, and query bounds for estimating dissipation-related observables. These are conditional algorithmic bounds, not an unconditional claim of speedup over classical solvers.</p>
+        <h3>Quantum Algorithms for Oscillatory Porous Flow: Preconditioning and Observable Estimation</h3>
+        <div class="meta"><b>Shreya Savadatti</b> and Franz Franchetti. Manuscript in preparation.</div>
+        <p>With Franz Franchetti, I study quantum algorithms for estimating energy dissipation in oscillatory porous flow without recovering the full velocity field. We use a divergence-free Fourier representation and a frequency-aware preconditioner whose <strong>condition-number bound is independent of spatial grid resolution</strong> and approaches one at high frequency. For material parameters accessed by point queries, we develop a classical coarse approximation followed by quantum estimation of the correction. Under explicit smoothness and access assumptions, this gives a query upper bound of <strong>O&#771;(&epsilon;<sup>&minus;d/(r+d)</sup>)</strong>, with a matching quantum query lower bound in the manuscript's stated regime. Numerical checks support the operator identities; an end-to-end quantum speedup or hardware demonstration is not claimed.</p>
       </div>
     </div>
   </section>
