@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Keeps the site out of search engines. Delete this line when you want to be found on Google. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Shreya Savadatti</title>
+<style>
+  :root { --bg:#ffffff; --ink:#14141f; --soft:#4b4b57; --faint:#9c9ca8; --line:#ececf0; --link:#2a6fc9; --flag:#e0321f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#101114; --ink:#eeeef2; --soft:#b4b4c0; --faint:#73737f; --line:#25262c; --link:#78aef5; --flag:#ff7a66; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font: 18px/1.6 "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  main { max-width: 940px; margin: 0 auto; padding: 84px 28px 110px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .top { display:grid; grid-template-columns: 1fr 220px; gap: 56px; align-items:start; }
+  h1 { font-size: 46px; font-weight: 600; letter-spacing: -0.6px; line-height: 1.1; margin: 0 0 30px; }
+  .bio p { margin: 0 0 22px; }
+  .photo { width:220px; height:258px; margin-top:22px; border-radius:22px; overflow:hidden;
+    background: linear-gradient(155deg,#2a6fc9,#152a52); display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:60px; font-weight:600; letter-spacing:1px; }
+  .photo img { width:100%; height:100%; object-fit:cover; display:block; }
+  .links { display:flex; flex-wrap:wrap; gap:8px 28px; margin: 34px 0 26px; }
+  .mail { color: var(--ink); }
+
+  .tabs { display:flex; flex-wrap:wrap; gap: 4px 36px; margin: 76px 0 30px; }
+  .tabs button { all:unset; cursor:pointer; font-size:31px; font-weight:500; letter-spacing:-0.3px; color:var(--faint); transition: color .15s; }
+  .tabs button:hover { color: var(--soft); }
+  .tabs button[aria-selected="true"] { color: var(--ink); }
+  .tabs button:focus-visible { outline:2px solid var(--link); outline-offset:6px; border-radius:4px; }
+  .panel { display:none; animation: in .22s ease; }
+  .panel.on { display:block; }
+  @keyframes in { from { opacity:0; transform: translateY(5px);} to { opacity:1; transform:none; } }
+
+  .row { display:grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 6px 0; }
+  .when { color: var(--faint); }
+  .flag { color: var(--flag); }
+
+  h2 { font-size: 14px; font-weight: 600; letter-spacing: 1.3px; text-transform: uppercase; color: var(--faint); margin: 38px 0 6px; }
+  .panel > h2:first-child { margin-top: 4px; }
+  .item { padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .item:last-child { border-bottom: 0; }
+  .item h3 { margin:0; font-size:18px; font-weight:600; line-height:1.4; }
+  .item .meta { color: var(--soft); font-size: 16px; margin-top: 2px; }
+  .item p { margin: 7px 0 0; color: var(--soft); font-size: 16.5px; }
+  .item .more { margin-top: 7px; font-size: 16px; display:flex; flex-wrap:wrap; gap: 4px 20px; }
+  footer { margin-top: 84px; color: var(--faint); font-size: 14px; }
+
+  @media (max-width: 740px) {
+    main { padding: 44px 22px 80px; }
+    .top { grid-template-columns: 1fr; gap: 22px; }
+    .photo { order:-1; width:128px; height:150px; margin:0; font-size:38px; border-radius:16px; }
+    h1 { font-size: 36px; margin-bottom: 20px; }
+    .tabs { gap: 4px 24px; margin-top: 56px; }
+    .tabs button { font-size: 24px; }
+    .row { grid-template-columns: 1fr; gap:0; padding: 9px 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="top">
+    <div class="bio">
+      <h1>Shreya Savadatti</h1>
+      <p>I'm a Master's student in Information Security at
+        <a href="https://www.cmu.edu/ini/">Carnegie Mellon University</a> and a Quantum Research Assistant
+        in the Department of Electrical and Computer Engineering. My research is on quantum error correction,
+        fault tolerance, and certifying that quantum devices and algorithms do what they claim.</p>
+      <p>I like results that can be checked: proofs with exact arithmetic behind them, hardware runs
+        reported with their failures, and code that reproduces every number in the paper.
+        I'm applying to PhD programs in quantum computing for Fall 2027.</p>
+
+      <!-- EDIT: put your real Scholar and LinkedIn links here, and add cv.pdf next to this file -->
+      <nav class="links">
+        <a href="https://github.com/shreyasavadatti">GitHub</a>
+        <a href="#">G. Scholar</a>
+        <a href="#">LinkedIn</a>
+        <a href="cv.pdf">CV (2026)</a>
+      </nav>
+      <div class="mail">ssavadat at andrew dot cmu dot edu</div>
+    </div>
+    <!-- EDIT: to use a photo, add photo.jpg next to this file and replace SS with <img src="photo.jpg" alt="Shreya Savadatti"> -->
+    <div class="photo">SS</div>
+  </section>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true"  data-tab="highlights">Highlights</button>
+    <button role="tab" aria-selected="false" data-tab="research">Research</button>
+    <button role="tab" aria-selected="false" data-tab="projects">Projects</button>
+    <button role="tab" aria-selected="false" data-tab="misc">Misc</button>
+  </div>
+
+  <!-- EDIT: rows dated only "2026" need their month -->
+  <section class="panel on" id="highlights">
+    <div class="row"><span class="when">2026</span><span>Answered an open problem from the <a href="https://qiqc-op.com/problem/op_1482756b02794495/">QIQC Open Problem Zoo</a>. Paper on <a href="https://zenodo.org/records/24266097">Zenodo</a>.</span></div>
+    <div class="row"><span class="when">Nov 2026</span><span>Released code and write-up for <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">learning the error of IonQ's ZZ gate</a>.</span></div>
+    <div class="row"><span class="when">2026</span><span>Awarded research credits through the IonQ research credits program.</span></div>
+    <div class="row"><span class="when">2026</span><span><a href="https://github.com/shreyasavadatti/qsig-state-informed-gqe">QSIG</a> selected as a <span class="flag">Finalist</span> at the Aqora quantum hackathon.</span></div>
+    <div class="row"><span class="when">2026</span><span><a href="https://github.com/shreyasavadatti/ess-entropic-scenario-superposition">ESS</a> selected as a <span class="flag">Finalist</span> at the Aqora quantum hackathon.</span></div>
+    <div class="row"><span class="when">2026</span><span>Joined CMU ECE as a Quantum Research Assistant.</span></div>
+    <div class="row"><span class="when">2026</span><span>Pull request merged into <a href="https://github.com/Qiskit/qiskit/pull/16345">Qiskit</a>.</span></div>
+    <div class="row"><span class="when">2026</span><span><span class="flag">3rd place</span> at the Qollab hackathon with QVerify Lab.</span></div>
+    <div class="row"><span class="when">2026</span><span>Summer research internship at a U.S. DOE national laboratory.</span></div>
+    <div class="row"><span class="when">Aug 2025</span><span>Started my Master's at Carnegie Mellon.</span></div>
+    <div class="row"><span class="when">2025</span><span>Paper published in <a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Complex &amp; Intelligent Systems</a>.</span></div>
+  </section>
+
+  <section class="panel" id="research">
+    <h2>Papers and preprints</h2>
+    <div class="item">
+      <h3>Failure of Geometric R&eacute;nyi Amortization Collapse Without Slot Assistance</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Zenodo, 2026.</div>
+      <p>For ordinary quantum channels, the geometric R&eacute;nyi divergence satisfies amortization collapse.
+        I show that the analogous identity fails for superchannels when the inserted channels are restricted
+        to the slot, for every 1 &lt; &alpha; &le; 2, which answers a problem posed in the QIQC Open Problem Zoo.
+        Reference assistance restores the collapse.</p>
+      <div class="more"><a href="https://zenodo.org/records/24266097">Paper</a>
+        <a href="https://qiqc-op.com/problem/op_1482756b02794495/">Open problem</a></div>
+    </div>
+    <div class="item">
+      <h3>Physicality, Relaxation Gaps, and Resource Allocation in Pauli-Limited Quantum Certification</h3>
+      <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang. 2026.</div>
+      <p>How well a gate can be certified from noisy Pauli measurements, and how much it helps to require
+        the unknown channel to be physical. Two gates with the same stabilizer norm can behave differently.
+        Includes computer-assisted proofs in interval and exact rational arithmetic.</p>
+      <div class="more"><a href="https://github.com/shreyasavadatti/positivity-pauli-certification">Code and data</a></div>
+    </div>
+    <div class="item">
+      <h3>Certified Separation Between Coherent and Adaptive Temporal Processing of Quantum-Error-Correction Readout</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Manuscript, 2026.</div>
+      <p>Does keeping quantum information between rounds of error-correction readout help the final decision?
+        In an idealized two-round benchmark, a receiver with a seven-dimensional memory has certified error
+        below 24.21%, while every adaptive measure-and-feed-forward receiver stays above 25.14%.</p>
+    </div>
+    <div class="item">
+      <h3>Perpetual Fault Tolerance at Fixed Overhead for Contractive Quantum Filters and Recurrent Instruments</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Manuscript, 2026.</div>
+      <p>Fault-tolerance bounds usually grow with the length of the computation. For a filter that forgets
+        its past, I combine concatenated level reduction with trace-distance contraction to bound the error
+        for all time at a concatenation level that does not depend on how long the stream runs.</p>
+    </div>
+    <div class="item">
+      <h3>Entanglement Budgets and Certified Energy Floors for Variational Quantum Circuits</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Manuscript, 2026.</div>
+      <p>A VQE can fail because the circuit cannot represent the target or because training cannot find it.
+        I bound the first failure before any training, from the entangling gates and total entangling angle
+        a circuit carries across each cut.</p>
+    </div>
+    <div class="item">
+      <h3>Quantum Algorithms for Oscillatory Brinkman Flow: Preconditioning and Observable Estimation</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Manuscript, 2026.</div>
+      <p>A preconditioner whose condition-number bound is independent of the grid, a block encoding, and
+        query upper and lower bounds for estimating dissipation observables in porous-media flow.
+        All scalings are stated under explicit access assumptions.</p>
+    </div>
+    <div class="item">
+      <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
+      <div class="meta"><b>Shreya Savadatti</b>. Write-up, 2026. Supported by IonQ research credits.</div>
+      <p>A four-parameter error model for IonQ's native gate that can be learned without twirling, and a
+        modified observable that removes the resulting bias. Validated in simulation so far, with hardware
+        runs planned.</p>
+      <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction/blob/main/paper/writeup.pdf">PDF</a>
+        <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
+    </div>
+    <div class="item">
+      <!-- EDIT: replace with the exact published title and author list -->
+      <h3>Quantum fully homomorphic encryption schemes and hierarchical memory management for fault-tolerant quantum computing</h3>
+      <div class="meta">Complex &amp; Intelligent Systems (Springer), 2025.</div>
+      <div class="more"><a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Paper</a></div>
+    </div>
+
+    <h2>Master's thesis</h2>
+    <div class="item">
+      <h3>Q-MINT-W: Certifying Error-Mitigated Results from Quantum Hardware</h3>
+      <div class="meta">Carnegie Mellon University, in progress.</div>
+      <p>A certificate for checking the integrity of error-mitigated results, tested on IBM and Rigetti
+        devices from 4 to 16 qubits, including certified zero-noise extrapolation.</p>
+    </div>
+
+    <h2>Patent</h2>
+    <div class="item">
+      <h3>Quantum Machine Learning System for Chronic Kidney Disease Detection</h3>
+      <div class="meta">Inventor. Patent pending.</div>
+    </div>
+  </section>
+
+  <section class="panel" id="projects">
+    <div class="item">
+      <h3>QSIG: a state-informed generative quantum eigensolver</h3>
+      <div class="meta"><span class="flag">Finalist</span>, Aqora quantum hackathon. Mitsubishi Chemical and AIST track.</div>
+      <p>Returns a fingerprint of the quantum state to the generative model instead of a single energy.
+        It halves the entangling-gate count at no cost in exact energy. A 12-job run on Rigetti hardware
+        went against my own hypothesis that the shallower circuit would measure better, and both results are reported.</p>
+      <div class="more"><a href="https://github.com/shreyasavadatti/qsig-state-informed-gqe">Repository</a></div>
+    </div>
+    <div class="item">
+      <h3>ESS: Entropic Scenario Superposition</h3>
+      <div class="meta"><span class="flag">Finalist</span>, Aqora quantum hackathon.</div>
+      <p>Power-grid planning where risk appetite is a single temperature dial, checked against exhaustive
+        enumeration. Writing the problem as a degree-5 polynomial avoids 252,720 auxiliary qubits that a
+        QUBO would need. No speedup is claimed.</p>
+      <div class="more"><a href="https://github.com/shreyasavadatti/ess-entropic-scenario-superposition">Repository</a></div>
+    </div>
+    <div class="item">
+      <h3>Formally verified QEC decoders in Lean 4</h3>
+      <p>A verified minimum-weight matching decoder, starting with repetition codes and extending to
+        rotated surface codes.</p>
+    </div>
+    <div class="item">
+      <h3>QVerify Lab</h3>
+      <div class="meta"><span class="flag">3rd place</span>, Qollab hackathon. Built solo.</div>
+      <p>A dashboard that checks whether a quantum circuit performed the operation it was meant to.</p>
+    </div>
+  </section>
+
+  <section class="panel" id="misc">
+    <h2>Open source</h2>
+    <div class="item">
+      <h3>Qiskit</h3>
+      <p>Replaced the sympy dependency in <code>SparsePauliOp.simplify</code> with a Rust-backed routine
+        (<a href="https://github.com/Qiskit/qiskit/pull/16345">#16345</a>, merged). IBM Qiskit Advocate.</p>
+    </div>
+    <div class="item">
+      <h3>Deltakit</h3>
+      <p>Found and reproduced a bug in the Pij-to-DEM pipeline that produced negative probabilities at
+        realistic shot counts.</p>
+    </div>
+    <h2>Mentoring</h2>
+    <div class="item">
+      <p style="margin:0">I mentor a student researcher on machine-learning detection of side-channel attacks.</p>
+    </div>
+  </section>
+
+  <footer>Last updated November 2026.</footer>
+</main>
+
+<script>
+  const tabs = document.querySelectorAll('.tabs button');
+  function show(name) {
+    tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.tab === name));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === name));
+  }
+  tabs.forEach(t => t.addEventListener('click', () => { show(t.dataset.tab); history.replaceState(null, '', '#' + t.dataset.tab); }));
+  const start = location.hash.slice(1);
+  if (document.getElementById(start)) show(start);
+</script>
+</body>
+</html>
