@@ -163,6 +163,18 @@
     <div class="item">
       <span class="yr">2026</span>
       <div>
+        <h3>Proof-Carrying Error Mitigation: Verifiable Error Bars for Quantum Cloud Results</h3>
+        <div class="meta"><b>Shreya Savadatti</b> and Elias Towe. In preparation for submission to IEEE Quantum Week (QCE 2027). Master's thesis work.</div>
+        <p>Cloud quantum services often apply error mitigation before returning a result, and the user cannot see how it was done. I make the mitigated result carry its own proof: the service returns an error bar and a short dual certificate that the user checks in exact rational arithmetic, without trusting the service or its solver. I prove that under independent readout errors, only <strong>Q+1 of the 2Q readout error directions</strong> can change any mitigated result, so Q+1 simple basis-state circuits are the right checks and circuits that imitate the target are not.</p>
+        <p>I tested this in five hardware runs. On <strong>Rigetti Cepheus-1-108Q</strong> the checks found strong readout crosstalk (one qubit misread 55% of the time when a neighbour was flipped) and the protocol correctly refused to certify. On <strong>IBM ibm_fez</strong> all four predictions fixed before the run held: error bars up to <strong>57% tighter</strong>, and a calibration misreport that shifted a GHZ value by <strong>6.6 standard errors</strong> while passing every look-alike check was rejected. At 16 qubits, <strong>17 circuits</strong> replaced the 65,536 a full calibration needs. I also extended the certificate to zero-noise extrapolation; it covered the true value in every hardware run, but a bootstrap analysis showed that this relied on statistical slack and that a generic alarm circuit stopped tracking the target after recalibration.</p>
+        <p><em>Current work:</em> a structure-matched alarm that sets the extrapolation bound from data. It is implemented and tested in simulation, and the hardware run is queued.</p>
+        <div class="more"><a href="papers/Savadatti_Proof_Carrying_Error_Mitigation.pdf">PDF</a>
+          <a href="https://github.com/shreyasavadatti/proof-carrying-error-mitigation">Code and data</a></div>
+      </div>
+    </div>
+    <div class="item">
+      <span class="yr">2026</span>
+      <div>
         <h3>Physicality, Relaxation Gaps, and Resource Allocation in Pauli-Limited Quantum Certification</h3>
         <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang. Manuscript in preparation.</div>
         <p>With Peter Yun Zhang, I study how much gate fidelity can be certified from incomplete, noisy Pauli measurements. We solve the positivity-relaxed problem in terms of the target's stabilizer norm, then prove that this number alone does not determine the best <em>physical</em> certificate: an interval-arithmetic proof exhibits <strong>two two-qubit gates with exactly the same stabilizer norm but different certification robustness</strong>. We give an exact condition for when the relaxation is tight and derive shot-allocation rules for finite measurement budgets. The reproducibility package includes interval-checked examples for <strong>200 two-qubit and 10 three-qubit targets</strong> and a simulated <strong>81-setting</strong> measurement protocol. No hardware measurements are claimed.</p>
@@ -255,8 +267,10 @@
       <span class="yr"></span>
       <div>
         <h3>Q-MINT-W: Certifying Error-Mitigated Results from Quantum Hardware</h3>
-        <div class="meta">Carnegie Mellon University, in progress.</div>
-        <p>My master's thesis develops certificates for evaluating the reliability of error-mitigated results from quantum hardware. The work includes studies on IBM and Rigetti devices with circuits from 4 to 16 qubits. The thesis remains in progress; the certification guarantees depend on the stated measurement and noise assumptions.</p>
+        <div class="meta">Carnegie Mellon University, Information Networking Institute. In progress, expected May 2027.</div>
+        <p>My master's thesis develops checkable certificates for error-mitigated results from cloud quantum hardware. It covers readout-error mitigation and zero-noise extrapolation, a theorem on which test circuits a certificate needs, and five runs on IBM and Rigetti devices with circuits from 4 to 16 qubits. The guarantees depend on the stated readout and noise assumptions, and the thesis reports where those assumptions failed on hardware. The main results are in the paper above.</p>
+        <div class="more"><a href="papers/Savadatti_Proof_Carrying_Error_Mitigation.pdf">Paper</a>
+          <a href="https://github.com/shreyasavadatti/proof-carrying-error-mitigation">Code and data</a></div>
       </div>
     </div>
 
