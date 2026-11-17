@@ -130,22 +130,23 @@
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>Failure of Geometric R&eacute;nyi Amortization Collapse Without Slot Assistance</h3>
-        <div class="meta"><b>Shreya Savadatti</b>. Zenodo.</div>
-        <p>I construct a counterexample to amortization collapse for geometric R&eacute;nyi superchannel divergence when no reference system can bypass the tested channel. The example uses commuting three-level states, a two-level output, and output dephasing, yet gives a strict separation for <strong>every 1 &lt; &alpha; &le; 2</strong>. At &alpha; = 2, the unamortized divergence is exactly log<sub>2</sub>(3/2) (about 0.585 bits), while an explicit rational witness reaches at least log<sub>2</sub>(183/116) (about 0.658 bits). I also show that a three-dimensional bypass register restores equality for this example and prove reference-assisted collapse for memoryless superchannel pairs. The broader fully amortized network-discrimination question remains open.</p>
-        <div class="more"><a href="https://zenodo.org/records/24266097">Paper</a>
-          <a href="https://qiqc-op.com/problem/op_1482756b02794495/">Open problem</a></div>
+        <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
+        <div class="meta"><b>Supported by IonQ Research and IonQ research credits.</b></div>
+        <div class="meta"><b>Shreya Savadatti</b>. Write-up.</div>
+        <p>I developed a <strong>four-parameter noise model</strong> for the native trapped-ion ZZ gate and three short calibration-circuit families that learn dephasing, coherent rotation error, and depolarization without Pauli twirling. I then derived a first-order correction that adjusts measured observables without changing the original circuit. In <strong>five-qubit simulations</strong>, this reduced observable bias by <strong>6&ndash;15&times;</strong> compared with uncorrected measurements. I then ran it on <strong>IonQ Forte</strong>. The calibration circuits showed that the ZZ gate at 0.1 turns <strong>over-rotates by about 4% per gate</strong>, with only about 0.2% incoherent error. On a five-qubit circuit with <strong>32 ZZ gates</strong>, the correction halved the bias after readout mitigation (from &minus;0.35 to &minus;0.17), the same as zero-noise extrapolation, with a smaller error bar. About half of the error in that circuit is not explained by a model learned on one ion pair.</p>
+        <p><em>Current work:</em> I am finding where the remaining error comes from by measuring each ion pair separately, checking for crosstalk onto neighbouring ions, measuring single-qubit gate error, and checking for drift between runs. I will then reanalyse the existing hardware data with the per-pair model.</p>
+        <div class="more"><a href="papers/Savadatti_ZZ_Gate_Noise_Correction.pdf">PDF</a>
+          <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
       </div>
     </div>
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
-        <div class="meta"><b>Shreya Savadatti</b>. Write-up. Supported by IonQ research credits.</div>
-        <p>I developed a <strong>four-parameter noise model</strong> for the native trapped-ion ZZ gate and three short calibration-circuit families that learn dephasing, coherent rotation error, and depolarization without Pauli twirling. I then derived a first-order correction that adjusts measured observables without changing the original circuit. In <strong>five-qubit simulations</strong>, this reduced observable bias by <strong>6&ndash;15&times;</strong> compared with uncorrected measurements. I then ran it on <strong>IonQ Forte</strong>. The calibration circuits showed that the ZZ gate at 0.1 turns <strong>over-rotates by about 4% per gate</strong>, with only about 0.2% incoherent error. On a five-qubit circuit with <strong>32 ZZ gates</strong>, the correction halved the bias after readout mitigation (from &minus;0.35 to &minus;0.17), the same as zero-noise extrapolation, with a smaller error bar. About half of the error in that circuit is not explained by a model learned on one ion pair.</p>
-        <p><em>Current work:</em> I am finding where the remaining error comes from by measuring each ion pair separately, checking for crosstalk onto neighbouring ions, measuring single-qubit gate error, and checking for drift between runs. I will then reanalyse the existing hardware data with the per-pair model.</p>
-        <div class="more"><a href="papers/Savadatti_ZZ_Gate_Noise_Correction.pdf">PDF</a>
-          <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
+        <h3>Failure of Geometric R&eacute;nyi Amortization Collapse Without Slot Assistance</h3>
+        <div class="meta"><b>Shreya Savadatti</b>. Zenodo.</div>
+        <p>I study whether repeated, adaptive use of a quantum channel can ever be easier to distinguish than a single use, measured by the geometric R&eacute;nyi divergence of superchannels. I show that this amortization collapse can fail when there is no reference system that bypasses the channel being tested. My counterexample uses commuting three-level states, a two-level output and output dephasing, and it gives a strict gap for <strong>every 1 &lt; &alpha; &le; 2</strong>. At &alpha; = 2 the unamortized divergence is exactly log<sub>2</sub>(3/2), about 0.585 bits, while an explicit rational witness reaches at least log<sub>2</sub>(183/116), about 0.658 bits. I also show that adding a three-dimensional bypass register removes the gap for this example, and I prove that collapse holds with a reference system for memoryless superchannel pairs. The general question for fully amortized network discrimination is still open.</p>
+        <div class="more"><a href="https://zenodo.org/records/24266097">Paper</a>
+          <a href="https://qiqc-op.com/problem/op_1482756b02794495/">Open problem</a></div>
       </div>
     </div>
     <div class="item">
@@ -154,7 +155,7 @@
         <!-- Exact publication metadata verified. -->
         <h3>Analysis of quantum fully homomorphic encryption schemes (QFHE) and hierarchial memory management for QFHE</h3>
         <div class="meta"><b>Shreya Savadatti</b>, Aswani Kumar Cherukuri, Annapurna Jonnalagadda, and Athanasios V. Vasilakos. <i>Complex &amp; Intelligent Systems</i>, 11, 264 (2025). Review article.</div>
-        <p>In this published review, we compare quantum fully homomorphic encryption approaches and examine the challenge of managing encrypted quantum data during computation. We also propose a hierarchical memory-management architecture with a quantum cache and reinforcement-learning-based control. The paper connects cryptographic requirements with practical questions of data placement, memory access, and fault-tolerant computation. The proposed architecture is a design framework, not a completed hardware evaluation.</p>
+        <p>In this review we compare the main approaches to quantum fully homomorphic encryption, which allows computation on encrypted quantum data, and look at how that encrypted data should be stored and moved during a computation. We then propose a hierarchical memory design with a quantum cache and a controller based on reinforcement learning. The paper links the security requirements of these schemes to practical questions about data placement, memory access and fault-tolerant computation. The memory design is a proposed framework and has not been evaluated on hardware.</p>
         <div class="more"><a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Paper</a></div>
       </div>
     </div>
