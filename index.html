@@ -119,29 +119,14 @@
   <hr class="rule">
 
   <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true"  data-tab="highlights">Highlights</button>
-    <button role="tab" aria-selected="false" data-tab="research">Research</button>
-    <button role="tab" aria-selected="false" data-tab="projects">Projects</button>
+    <button role="tab" aria-selected="true"  data-tab="research">Research</button>
+    <button role="tab" aria-selected="false" data-tab="projects">Projects &amp; Awards</button>
+    <button role="tab" aria-selected="false" data-tab="thesis">Thesis &amp; Patent</button>
     <button role="tab" aria-selected="false" data-tab="misc">Open Source</button>
   </div>
 
-  <!-- EDIT: rows dated only "2026" need their month -->
-  <section class="panel on" id="highlights">
-    <div class="row"><span class="when">Nov 2026</span><span>Resolved an open problem from the <a href="https://qiqc-op.com/problem/op_1482756b02794495/">QIQC Open Problem Zoo</a> on amortization of the geometric R&eacute;nyi divergence for superchannels. Paper on <a href="https://zenodo.org/records/24266097">Zenodo</a>.</span></div>
-    <div class="row"><span class="when">2026</span><span>Awarded research credits by IonQ for <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">noise learning on trapped-ion hardware</a>, through the IonQ research credits program.</span></div>
-    <div class="row"><span class="when">2026</span><span><span class="flag">Finalist</span> &middot; Aqora quantum hackathon, with <a href="https://github.com/shreyasavadatti/qsig-state-informed-gqe">QSIG</a> on the Mitsubishi Chemical and AIST track.</span></div>
-    <div class="row"><span class="when">2026</span><span><span class="flag">Finalist</span> &middot; Aqora quantum hackathon, with <a href="https://github.com/shreyasavadatti/ess-entropic-scenario-superposition">ESS</a>, quantum optimization for power-grid resilience.</span></div>
-    <div class="row"><span class="when">2026</span><span>Appointed Quantum Research Assistant in Carnegie Mellon's Department of Electrical and Computer Engineering.</span></div>
-    <div class="row"><span class="when">2026</span><span>Contribution merged into <a href="https://github.com/Qiskit/qiskit/pull/16345">Qiskit</a>, the most widely used quantum computing framework.</span></div>
-    <div class="row"><span class="when">2026</span><span><span class="flag">3rd place</span> &middot; Qollab hackathon, for QVerify Lab, a circuit-verification dashboard built solo.</span></div>
-    <div class="row"><span class="when">Jun 2026</span><span>Began a quantum computing internship at the U.S. Department of Energy's National Laboratory of the Rockies, ongoing.</span></div>
-    <div class="row"><span class="when">2025</span><span>Published <a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">&ldquo;Quantum fully homomorphic encryption schemes and hierarchical memory management for fault-tolerant quantum computing&rdquo;</a> in Complex &amp; Intelligent Systems (Springer).</span></div>
-    <div class="row"><span class="when">Patent</span><span>Filed a patent as inventor: Quantum Machine Learning System for Chronic Kidney Disease Detection. Pending at the Indian Patent Office.</span></div>
-    <div class="row"><span class="when">2025</span><span>Began graduate study at Carnegie Mellon University.</span></div>
-  </section>
-
-  <section class="panel" id="research">
-    <h2>Papers and preprints</h2>
+  <section class="panel on" id="research">
+    <h2>Preprints and publications</h2>
     <div class="item">
       <span class="yr">2026</span>
       <div>
@@ -158,8 +143,31 @@
     <div class="item">
       <span class="yr">2026</span>
       <div>
+        <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
+        <div class="meta"><b>Shreya Savadatti</b>. Write-up. Supported by IonQ research credits.</div>
+        <p>A four-parameter error model for IonQ's native gate that can be learned without twirling, and a
+          modified observable that removes the resulting bias. Validated in simulation so far, with hardware
+          runs planned.</p>
+        <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction/blob/main/paper/writeup.pdf">PDF</a>
+          <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
+      </div>
+    </div>
+    <div class="item">
+      <span class="yr">2025</span>
+      <div>
+        <!-- EDIT: replace with the exact published title and author list -->
+        <h3>Quantum fully homomorphic encryption schemes and hierarchical memory management for fault-tolerant quantum computing</h3>
+        <div class="meta">Complex &amp; Intelligent Systems (Springer).</div>
+        <div class="more"><a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Paper</a></div>
+      </div>
+    </div>
+
+    <h2>In progress</h2>
+    <div class="item">
+      <span class="yr">2026</span>
+      <div>
         <h3>Physicality, Relaxation Gaps, and Resource Allocation in Pauli-Limited Quantum Certification</h3>
-        <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang.</div>
+        <div class="meta"><b>Shreya Savadatti</b> and P. Y. Zhang. In preparation for arXiv.</div>
         <p>How well a gate can be certified from noisy Pauli measurements, and how much it helps to require
           the unknown channel to be physical. Two gates with the same stabilizer norm can behave differently.
           Includes computer-assisted proofs in interval and exact rational arithmetic.</p>
@@ -206,48 +214,6 @@
           All scalings are stated under explicit access assumptions.</p>
       </div>
     </div>
-    <div class="item">
-      <span class="yr">2026</span>
-      <div>
-        <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
-        <div class="meta"><b>Shreya Savadatti</b>. Write-up. Supported by IonQ research credits.</div>
-        <p>A four-parameter error model for IonQ's native gate that can be learned without twirling, and a
-          modified observable that removes the resulting bias. Validated in simulation so far, with hardware
-          runs planned.</p>
-        <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction/blob/main/paper/writeup.pdf">PDF</a>
-          <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
-      </div>
-    </div>
-    <div class="item">
-      <span class="yr">2025</span>
-      <div>
-        <!-- EDIT: replace with the exact published title and author list -->
-        <h3>Quantum fully homomorphic encryption schemes and hierarchical memory management for fault-tolerant quantum computing</h3>
-        <div class="meta">Complex &amp; Intelligent Systems (Springer).</div>
-        <div class="more"><a href="https://link.springer.com/article/10.1007/s40747-025-01851-7">Paper</a></div>
-      </div>
-    </div>
-
-    <h2>Master's thesis</h2>
-    <div class="item">
-      <span class="yr"></span>
-      <div>
-        <h3>Q-MINT-W: Certifying Error-Mitigated Results from Quantum Hardware</h3>
-        <div class="meta">Carnegie Mellon University, in progress.</div>
-        <p>A certificate for checking the integrity of error-mitigated results, tested on IBM and Rigetti
-          devices from 4 to 16 qubits, including certified zero-noise extrapolation.</p>
-      </div>
-    </div>
-
-    <h2>Patent</h2>
-    <div class="item">
-      <span class="yr"></span>
-      <div>
-        <h3>Quantum Machine Learning System for Chronic Kidney Disease Detection</h3>
-        <div class="meta">Inventor. Patent pending, Indian Patent Office.</div>
-        <div class="more"><a href="https://iprsearch.ipindia.gov.in/PatentSearch/PatentSearch/ViewPDF">Patent record</a></div>
-      </div>
-    </div>
   </section>
 
   <section class="panel" id="projects">
@@ -276,17 +242,50 @@
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>Formally verified QEC decoders in Lean 4</h3>
-        <p>A verified minimum-weight matching decoder, starting with repetition codes and extending to
-          rotated surface codes.</p>
+        <h3>QVerify Lab</h3>
+        <div class="meta"><span class="flag">3rd place</span> &middot; Qollab hackathon. Built solo.</div>
+        <p>A dashboard that checks whether a quantum circuit performed the operation it was meant to.</p>
       </div>
     </div>
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>QVerify Lab</h3>
-        <div class="meta"><span class="flag">3rd place</span> &middot; Qollab hackathon. Built solo.</div>
-        <p>A dashboard that checks whether a quantum circuit performed the operation it was meant to.</p>
+        <h3>IonQ research credits</h3>
+        <div class="meta"><span class="flag">Award</span> &middot; IonQ research credits program.</div>
+        <p>Hardware credits awarded for my work on learning and correcting the error of IonQ's native
+          two-qubit gate.</p>
+        <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Repository</a></div>
+      </div>
+    </div>
+    <div class="item">
+      <span class="yr">2026</span>
+      <div>
+        <h3>Formally verified QEC decoders in Lean 4</h3>
+        <p>A verified minimum-weight matching decoder, starting with repetition codes and extending to
+          rotated surface codes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="thesis">
+    <h2>Master's thesis</h2>
+    <div class="item">
+      <span class="yr"></span>
+      <div>
+        <h3>Q-MINT-W: Certifying Error-Mitigated Results from Quantum Hardware</h3>
+        <div class="meta">Carnegie Mellon University, in progress.</div>
+        <p>A certificate for checking the integrity of error-mitigated results, tested on IBM and Rigetti
+          devices from 4 to 16 qubits, including certified zero-noise extrapolation.</p>
+      </div>
+    </div>
+
+    <h2>Patent</h2>
+    <div class="item">
+      <span class="yr"></span>
+      <div>
+        <h3>Quantum Machine Learning System for Chronic Kidney Disease Detection</h3>
+        <div class="meta">Inventor. Patent pending, Indian Patent Office.</div>
+        <div class="more"><a href="https://iprsearch.ipindia.gov.in/PatentSearch/PatentSearch/ViewPDF">Patent record</a></div>
       </div>
     </div>
   </section>
