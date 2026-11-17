@@ -165,12 +165,14 @@
       <span class="yr">2026</span>
       <div>
         <h3>Proof-Carrying Error Mitigation: Verifiable Error Bars for Quantum Cloud Results</h3>
-        <div class="meta"><b>Shreya Savadatti</b> and Elias Towe. To be submitted to IEEE Quantum Week (QCE 2027). Based on my master's thesis.</div>
+        <div class="meta"><b>Shreya Savadatti</b> and Elias Towe. Based on my master's thesis.</div>
+        <div class="meta"><span class="flag">Submitting to</span> &middot; IEEE Quantum Week (QCE 2027).</div>
         <p>When a cloud quantum service returns an error-mitigated number, the user cannot see how it was produced. A software bug, an outdated calibration, or a dishonest provider could shift the answer, and mitigation tends to magnify such shifts. I wanted users to be able to check a mitigated result without trusting the provider. In this work, the provider returns each result with an error bar and a short certificate, and the user verifies the certificate on a laptop using exact arithmetic. I also proved which test circuits the certificate needs. Under independent readout errors, only <strong>Q+1 of the 2Q readout error directions</strong> can change a mitigated result, so Q+1 simple basis-state circuits cover everything that matters, while test circuits that imitate the target can miss up to 76% of it.</p>
         <p>I tested the method in five runs on real hardware. On <strong>Rigetti Cepheus-1-108Q</strong>, the checks detected strong readout crosstalk (one qubit was misread 55% of the time when its neighbour was flipped), and the protocol refused to certify, as intended. On <strong>IBM ibm_fez</strong>, all four predictions I fixed before the run held. The error bars were up to <strong>57% tighter</strong>, and a false calibration report that moved a GHZ result by <strong>6.6 standard errors</strong> while passing every imitation test was caught. At 16 qubits, <strong>17 circuits</strong> did the work of the 65,536 needed for full calibration. I also extended the certificate to zero-noise extrapolation. It covered the true value in every hardware run, but my own analysis showed that this depended on statistical slack and that a generic check circuit stopped tracking the target after IBM recalibrated the device.</p>
         <p><em>Next:</em> a check circuit built from each target's own gates, which sets the extrapolation bound from data. It is implemented and tested in simulation, and the hardware run is queued on IBM.</p>
         <div class="more"><a href="papers/Savadatti_Proof_Carrying_Error_Mitigation.pdf">PDF</a>
           <a href="https://github.com/shreyasavadatti/proof-carrying-error-mitigation">Code and data</a></div>
+        <p><em>First version, November 2026. I will update it after the hardware run of the structure-matched check.</em></p>
       </div>
     </div>
     <div class="item">
