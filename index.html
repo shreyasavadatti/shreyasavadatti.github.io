@@ -142,7 +142,8 @@
       <div>
         <h3>Learning and Inverting the Error of a Trapped-Ion ZZ Gate</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Write-up. Supported by IonQ research credits.</div>
-        <p>I developed a <strong>four-parameter noise model</strong> for the native trapped-ion ZZ gate and three short calibration-circuit families that learn dephasing, coherent rotation error, and depolarization without Pauli twirling. I then derived a first-order correction that adjusts measured observables without changing the original circuit. In <strong>five-qubit simulations</strong>, this reduced observable bias by <strong>6&ndash;15&times;</strong> compared with uncorrected measurements; at <strong>40 ZZ gates</strong>, median bias was <strong>1.7&ndash;4&times;</strong> smaller than with zero-noise extrapolation. The learning procedure was also tested using IonQ's <code>forte-1</code> cloud noise-model simulator. Physical IonQ hardware validation is planned, not yet reported.</p>
+        <p>I developed a <strong>four-parameter noise model</strong> for the native trapped-ion ZZ gate and three short calibration-circuit families that learn dephasing, coherent rotation error, and depolarization without Pauli twirling. I then derived a first-order correction that adjusts measured observables without changing the original circuit. In <strong>five-qubit simulations</strong>, this reduced observable bias by <strong>6&ndash;15&times;</strong> compared with uncorrected measurements. I then ran it on <strong>IonQ Forte</strong>. The calibration circuits showed that the ZZ gate at 0.1 turns <strong>over-rotates by about 4% per gate</strong>, with only about 0.2% incoherent error. On a five-qubit circuit with <strong>32 ZZ gates</strong>, the correction halved the bias after readout mitigation (from &minus;0.35 to &minus;0.17), the same as zero-noise extrapolation, with a smaller error bar. About half of the error in that circuit is not explained by a model learned on one ion pair.</p>
+        <p><em>Current work:</em> I am finding where the remaining error comes from by measuring each ion pair separately, checking for crosstalk onto neighbouring ions, measuring single-qubit gate error, and checking for drift between runs. I will then reanalyse the existing hardware data with the per-pair model.</p>
         <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction/blob/main/paper/writeup.pdf">PDF</a>
           <a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Code</a></div>
       </div>
@@ -235,7 +236,7 @@
         <h3>IonQ research credits</h3>
         <div class="meta"><span class="flag">Award</span> &middot; IonQ research credits program.</div>
         <p>Hardware credits awarded for my work on learning and correcting the error of IonQ's native
-          two-qubit gate.</p>
+          two-qubit gate. I used them for my first runs on IonQ Forte in November 2026.</p>
         <div class="more"><a href="https://github.com/shreyasavadatti/ionq-zz-noise-correction">Repository</a></div>
       </div>
     </div>
