@@ -96,7 +96,7 @@
     <button role="tab" aria-selected="true"  data-tab="highlights">Highlights</button>
     <button role="tab" aria-selected="false" data-tab="research">Research</button>
     <button role="tab" aria-selected="false" data-tab="projects">Projects</button>
-    <button role="tab" aria-selected="false" data-tab="misc">Misc</button>
+    <button role="tab" aria-selected="false" data-tab="misc">Open Source</button>
   </div>
 
   <!-- EDIT: rows dated only "2026" need their month -->
@@ -223,16 +223,19 @@
   </section>
 
   <section class="panel" id="misc">
-    <h2>Open source</h2>
     <div class="item">
       <h3>Qiskit</h3>
+      <div class="meta">IBM Qiskit Advocate</div>
       <p>Replaced the sympy dependency in <code>SparsePauliOp.simplify</code> with a Rust-backed routine
-        (<a href="https://github.com/Qiskit/qiskit/pull/16345">#16345</a>, merged). IBM Qiskit Advocate.</p>
+        (<a href="https://github.com/Qiskit/qiskit/pull/16345">#16345</a>, merged). A second pull request
+        (<a href="https://github.com/Qiskit/qiskit/pull/16484">#16484</a>) is under review.</p>
     </div>
     <div class="item">
-      <h3>Deltakit</h3>
-      <p>Found and reproduced a bug in the Pij-to-DEM pipeline that produced negative probabilities at
-        realistic shot counts.</p>
+      <h3>Deltakit <span class="meta">(Riverlane)</span></h3>
+      <p>Found and reproduced a correctness bug in the Pij-to-DEM pipeline that produced negative
+        probabilities at realistic shot counts
+        (<a href="https://github.com/Deltakit/deltakit-decode/issues/11">#11</a>). The issue was accepted
+        and assigned to me; the fix is in progress.</p>
     </div>
     <h2>Mentoring</h2>
     <div class="item">
