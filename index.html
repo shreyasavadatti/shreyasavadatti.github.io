@@ -37,6 +37,10 @@
     border-radius:6px; filter:saturate(.96); }
   .links { display:flex; flex-wrap:wrap; gap:8px 24px; margin:28px 0 12px; font-weight:500; font-size:16px; }
   .mail { color:var(--soft); font-size:15.5px; }
+  .roles { list-style:none; padding:0; margin:24px 0 6px; }
+  .roles li { padding:6px 0 6px 14px; border-left:2px solid var(--line); color:var(--soft); font-size:16px; }
+  .roles li + li { margin-top:2px; }
+  .roles .inc { color:var(--accent); font-weight:700; }
   .rule { border:0; border-top:1px solid var(--line); margin:64px 0 0; }
 
   .tabs { display:flex; flex-wrap:wrap; gap:0 38px; margin:0 0 36px; border-bottom:1px solid var(--line); }
@@ -100,9 +104,12 @@
         ones. A quantum advantage only counts if it survives the best classical competitor, so I look for
         separations that can be proved, like a quantum memory that beats every adaptive classical strategy
         for reading out error-correction data.</p>
-      <p>Since June 2026 I have also been a quantum computing intern at the U.S. Department of Energy's
-        National Laboratory of the Rockies. I'm applying to PhD programs in quantum computing for Fall 2027,
-        and I'm always glad to talk about research.</p>
+      <ul class="roles">
+        <li>Quantum Computing Intern, then co-op, at the U.S. Department of Energy's National Laboratory of the Rockies (since June 2026).</li>
+        <li><strong class="inc">Incoming:</strong> Quantum Software Engineer (consulting), Infleqtion, from December 2026.</li>
+        <li><strong class="inc">Incoming:</strong> Quantum Computing Intern, Quantinuum, Summer 2027.</li>
+      </ul>
+      <p>I'm applying to PhD programs in quantum computing for Fall 2027, and I'm always glad to talk about research.</p>
 
       <!-- EDIT: put your real Scholar and LinkedIn links here, and add cv.pdf next to this file -->
       <nav class="links">
