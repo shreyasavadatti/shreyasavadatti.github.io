@@ -96,6 +96,7 @@
         <li>Quantum Computing Intern, then co-op, at the U.S. Department of Energy's National Laboratory of the Rockies (since June 2026).</li>
         <li><strong class="inc">Incoming:</strong> Quantum Software Engineer at Infleqtion (contract), from December 2026.</li>
         <li><strong class="inc">Incoming:</strong> Quantum Computing Intern, Quantinuum, Summer 2027.</li>
+        <li><strong class="inc">Patent pending:</strong> inventor on a quantum machine learning method for early detection of chronic kidney disease.</li>
       </ul>
       <p>I'm a master's student at <a href="https://www.cmu.edu/ini/">Carnegie Mellon University</a> and a
         Quantum Research Assistant in the Department of Electrical and Computer Engineering. My research is
@@ -133,6 +134,15 @@
 
   <section class="panel on" id="research">
     <h2>Publications, preprints, and technical reports</h2>
+    <div class="item">
+      <span class="yr">2026</span>
+      <div>
+        <h3>Certified Separation Between Coherent and Adaptive Temporal Processing of Quantum-Error-Correction Readout</h3>
+        <div class="meta"><b>Shreya Savadatti</b>. arXiv preprint.</div>
+        <p>I study whether keeping quantum information between rounds of syndrome readout can improve the final error-correction decision. I bound <strong>every separate adaptive receiver</strong>, including receivers with unrestricted classical history and feed-forward, using a semidefinite relaxation, and compare that bound with an explicit coherent receiver. In a two-round benchmark, all separate adaptive receivers have recovery risk of at least <strong>25.1432%</strong>, while a receiver retaining a <strong>seven-dimensional quantum memory</strong> achieves at most <strong>24.2100%</strong>: a certified improvement of at least <strong>0.9332 percentage points</strong>. In the strict counted-register model, the smallest separating memory dimension is <strong>four</strong>; certified separations also extend to three and four rounds.</p>
+        <div class="more"><a href="https://arxiv.org/abs/2611.25216">arXiv:2611.25216</a></div>
+      </div>
+    </div>
     <div class="item">
       <span class="yr">2026</span>
       <div>
@@ -204,14 +214,6 @@
     <div class="item">
       <span class="yr">2026</span>
       <div>
-        <h3>Certified Separation Between Coherent and Adaptive Temporal Processing of Quantum-Error-Correction Readout</h3>
-        <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
-        <p>I study whether keeping quantum information between rounds of syndrome readout can improve the final error-correction decision. I bound <strong>every separate adaptive receiver</strong>, including receivers with unrestricted classical history and feed-forward, using a semidefinite relaxation, and compare that bound with an explicit coherent receiver. In a two-round benchmark, all separate adaptive receivers have recovery risk of at least <strong>25.1432%</strong>, while a receiver retaining a <strong>seven-dimensional quantum memory</strong> achieves at most <strong>24.2100%</strong>: a certified improvement of at least <strong>0.9332 percentage points</strong>. In the strict counted-register model, the smallest separating memory dimension is <strong>four</strong>; certified separations also extend to three and four rounds.</p>
-      </div>
-    </div>
-    <div class="item">
-      <span class="yr">2026</span>
-      <div>
         <h3>Perpetual Fault Tolerance at Fixed Overhead for Contractive Quantum Filters and Recurrent Instruments</h3>
         <div class="meta"><b>Shreya Savadatti</b>. Manuscript.</div>
         <p>I develop a fault-tolerance analysis for quantum filters that run continuously and gradually forget earlier disturbances. Standard whole-circuit error bounds grow with the number of operations; here, combining concatenated error correction with trace-distance contraction gives a bound on the <strong>current state and any fixed window of recent outputs that holds for every number of rounds</strong>, using a fixed encoding level with respect to runtime. The manuscript constructs a <strong>Steane [[7,1,3]]</strong> fault-tolerant implementation, uses machine-checked integer calculations for its stated gadget obligations, and derives an exact <strong>two-cycle contraction factor of 1/&radic;2</strong> for a driven weak-measurement example. The guarantee depends on the filter's contraction and fault-model assumptions; it does not cover the full growing output transcript.</p>
@@ -274,6 +276,17 @@
   </section>
 
   <section class="panel" id="thesis">
+    <h2>Patent</h2>
+    <div class="item">
+      <span class="yr">2025</span>
+      <div>
+        <h3>Quantum Machine Learning System for Chronic Kidney Disease Detection</h3>
+        <div class="meta"><span class="flag">Patent pending</span> &middot; Indian Patent Office, through VIT's IPR and Technology Transfer Cell.</div>
+        <div class="meta">Inventors: Kathiravan Srinivasan and <b>Shreya Savadatti</b>.</div>
+        <p>A hybrid quantum-classical classifier for early detection of chronic kidney disease from routine clinical data. LASSO selects the informative clinical features, and a sparse autoencoder generates synthetic minority-class samples to correct the class imbalance typical of medical datasets. The selected features are encoded into quantum states through a <strong>custom feature map</strong> with polynomial single-qubit rotations and controlled entanglement, and the resulting <strong>quantum kernel</strong>, computed from simulated statevectors, trains a support vector machine. The pipeline was benchmarked against classical models and standard Pauli and ZZ quantum feature maps.</p>
+      </div>
+    </div>
+
     <h2>Master's thesis</h2>
     <div class="item">
       <span class="yr"></span>
@@ -286,15 +299,6 @@
       </div>
     </div>
 
-    <h2>Patent</h2>
-    <div class="item">
-      <span class="yr"></span>
-      <div>
-        <h3>Quantum Machine Learning System for Chronic Kidney Disease Detection</h3>
-        <div class="meta">Inventor. Patent pending, Indian Patent Office.</div>
-        <div class="more"><a href="https://iprsearch.ipindia.gov.in/PatentSearch/PatentSearch/ViewPDF">Patent record</a></div>
-      </div>
-    </div>
   </section>
 
   <section class="panel" id="misc">
