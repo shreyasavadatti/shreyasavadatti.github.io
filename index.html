@@ -133,7 +133,7 @@
       <span class="yr">2026</span>
       <div>
         <h3>Certified Separation Between Coherent and Adaptive Temporal Processing of Quantum-Error-Correction Readout</h3>
-        <div class="meta"><b>Shreya Savadatti</b>, Matthew Reynolds, Jonathan Maack, Franz Franchetti, and Wesley Jones. arXiv preprint.</div>
+        <div class="meta"><b>Shreya Savadatti</b>, Matthew Reynolds, Jonathan Maack, Franz Franchetti, and Wesley Jones. arXiv preprint. Presented at QCAS 2026, co-located with IEEE/ACM ICCAD.</div>
         <p>We study whether keeping quantum information between rounds of syndrome readout can improve the final error-correction decision. We bound <strong>every separate adaptive receiver</strong>, including receivers with unrestricted classical history and feed-forward, using a semidefinite relaxation, and compare that bound with an explicit coherent receiver. In a two-round benchmark, all separate adaptive receivers have recovery risk of at least <strong>25.1432%</strong>, while a receiver retaining a <strong>seven-dimensional quantum memory</strong> achieves at most <strong>24.2100%</strong>: a certified improvement of at least <strong>0.9332 percentage points</strong>. In the strict counted-register model, the smallest separating memory dimension is <strong>four</strong>; certified separations also extend to three and four rounds.</p>
         <div class="more"><a href="https://arxiv.org/abs/2611.25216">arXiv:2611.25216</a></div>
       </div>
@@ -191,6 +191,14 @@
       </div>
     </div>
     <div class="item">
+      <span class="yr">2026</span>
+      <div>
+        <h3>Your Packets Are Showing: Hybrid Quantum ML for Passive OS Fingerprinting</h3>
+        <div class="meta">Jae Sung Kim, La Alsulaim, <b>Shreya Savadatti</b>, and Daniel Justice. Accepted at DEF CON 34 (2026).</div>
+        <p>Passive OS fingerprinting identifies a host's operating system from the packets it sends, and classical machine learning already does it well. We used it as a real, imbalanced security dataset for testing a hybrid quantum-classical classifier: a <strong>20-qubit variational circuit</strong> in PennyLane with a small PyTorch head, trained on nPrint packet features from the CIC-IDS 2017 capture across 12 operating systems. On the same 20 features and the same split, the hybrid model reached a weighted F1 of <strong>0.348 against 0.361 for XGBoost</strong>, with 1,228 trainable parameters. It did not beat the classical baseline, and we do not claim a quantum advantage. The main finding is about training: the model had sharp accuracy collapses mid-training, which we trace to class-weighted loss interacting with the quantum gradients, and learning-rate warmup, clipping and halving restored stable training. All results are from a noiseless GPU simulator.</p>
+      </div>
+    </div>
+    <div class="item">
       <span class="yr">2025</span>
       <div>
         <!-- Exact publication metadata verified. -->
@@ -201,7 +209,7 @@
       </div>
     </div>
 
-    <h2>Manuscripts in preparation</h2>
+    <h2>Manuscripts (under review or in preparation)</h2>
     <div class="item">
       <span class="yr">2026</span>
       <div>
@@ -305,10 +313,10 @@
     <div class="item">
       <span class="yr"></span>
       <div>
-        <h3>Q-MINT-W: Certifying Error-Mitigated Results from Quantum Hardware</h3>
+        <h3>Proof-Carrying Error Mitigation: Verifiable Error Bars for Quantum Cloud Results</h3>
         <div class="meta">Carnegie Mellon University, Information Networking Institute. In progress, expected May 2027.</div>
-        <p>My master's thesis develops checkable certificates for error-mitigated results from cloud quantum hardware. It covers readout-error mitigation and zero-noise extrapolation, a theorem on which test circuits a certificate needs, and five runs on IBM and Rigetti devices with circuits from 4 to 16 qubits. The guarantees depend on the stated readout and noise assumptions, and the thesis reports where those assumptions failed on hardware. The main results are in the paper above.</p>
-        <div class="more"><a href="papers/Savadatti_Proof_Carrying_Error_Mitigation.pdf">Paper</a>
+        <p>My master's thesis develops checkable certificates for error-mitigated results from cloud quantum hardware. It covers readout-error mitigation and zero-noise extrapolation, a theorem on which test circuits a certificate needs, and five runs on IBM and Rigetti devices with circuits from 4 to 16 qubits. The guarantees depend on the stated readout and noise assumptions, and the thesis reports where those assumptions failed on hardware. The main results are also written up as a paper with Elias Towe, listed under Research.</p>
+        <div class="more"><a href="papers/Savadatti_Proof_Carrying_Error_Mitigation.pdf">Thesis draft</a>
           <a href="https://github.com/shreyasavadatti/proof-carrying-error-mitigation">Code and data</a></div>
       </div>
     </div>
