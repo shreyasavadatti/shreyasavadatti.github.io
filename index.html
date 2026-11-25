@@ -194,8 +194,9 @@
       <span class="yr">2026</span>
       <div>
         <h3>Your Packets Are Showing: Hybrid Quantum ML for Passive OS Fingerprinting</h3>
-        <div class="meta">Jae Sung Kim, La Alsulaim, <b>Shreya Savadatti</b>, and Daniel Justice. Accepted at DEF CON 34 (2026).</div>
+        <div class="meta">Jae Sung Kim, La Alsulaim, <b>Shreya Savadatti</b>, and Daniel Justice. Main-stage talk (Track 1), DEF CON 34, Las Vegas, August 2026.</div>
         <p>Passive OS fingerprinting identifies a host's operating system from the packets it sends, and classical machine learning already does it well. We used it as a real, imbalanced security dataset for testing a hybrid quantum-classical classifier: a <strong>20-qubit variational circuit</strong> in PennyLane with a small PyTorch head, trained on nPrint packet features from the CIC-IDS 2017 capture across 12 operating systems. On the same 20 features and the same split, the hybrid model reached a weighted F1 of <strong>0.348 against 0.361 for XGBoost</strong>, with 1,228 trainable parameters. It did not beat the classical baseline, and we do not claim a quantum advantage. The main finding is about training: the model had sharp accuracy collapses mid-training, which we attribute, as a candidate explanation, to class-weighted loss interacting with the quantum gradients; halving the learning rate restored stable training. All results are from a noiseless GPU simulator.</p>
+        <div class="more"><a href="https://defcon.org/html/defcon-34/dc-34-speakers.html">DEF CON talk</a></div>
       </div>
     </div>
     <div class="item">
