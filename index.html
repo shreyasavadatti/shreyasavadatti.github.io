@@ -331,7 +331,7 @@
         <h3>Qiskit</h3>
         <div class="meta">IBM Qiskit Advocate</div>
         <p><strong>Merged:</strong> replaced the <code>sympy</code>-dependent coefficient check in <code>SparsePauliOp.simplify</code> with Qiskit's Rust-backed symbolic engine (<a href="https://github.com/Qiskit/qiskit/pull/16345">PR #16345</a>).</p>
-        <p><strong>Assigned:</strong> transpiling a reversed ECR gate fails on <code>FakeCairoV2</code> even though the backend supports ECR in the forward direction (<a href="https://github.com/Qiskit/qiskit/issues/17442">issue #17442</a>, transpiler bug). The fix is to make the gate-direction pass check which operations each qubit pair supports, with a test on a mixed CX/ECR target.</p>
+        <p><strong>Assigned:</strong> transpiling a reversed ECR gate fails on <code>FakeCairoV2</code> even though the backend supports ECR in the forward direction (<a href="https://github.com/Qiskit/qiskit/issues/17442">issue #17442</a>, transpiler bug). I am working on a fix that makes the gate-direction pass check which operations each qubit pair supports, with a test on a mixed CX/ECR target.</p>
         <p><strong>Under review:</strong> a fix for composing circuits with classical bits inside control-flow scopes (<a href="https://github.com/Qiskit/qiskit/pull/16484">PR #16484</a>).</p>
       </div>
     </div>
